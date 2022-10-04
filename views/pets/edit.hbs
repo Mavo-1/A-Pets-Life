@@ -1,0 +1,40 @@
+<h3>Edit Pet Information</h3>
+<div class="class row">
+    <form action="/pets/{{pet._id}}" method="POST" class="col s12">
+    <input type="hidden" name="_method" value="PUT"
+    <div class="row">
+        <div class="input-field">
+            <input type="text" id="title" name="title" value="{{pet.title}}">
+            <label for="title">Pet Name</label>
+        </div>
+    </div>
+    
+
+
+    <div class="row">
+        <div class="input-field">
+            <select name="status" id="status">
+                {{#select pet.status}}
+                <option value="Food" selected>Food</option>
+                <option value="Pee" >Pee</option>
+                <option value="Poop" >Poop</option>
+                <option value="Walk" >Walk</option>
+                {{/select}}
+            </select>
+            <label for="status">Status</label>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="input-field">
+            <h5>Tell Us About Your Pet</h5>
+            <textarea name="body" id="body">{{pet.body}}</textarea>
+        </div>
+    </div>
+
+    <div class="row">
+        <input type="submit" value="Save" class="btn">
+        <a href="/dashboard" class="btn orange">Cancel</a>
+    </div>
+    </form>
+</div>

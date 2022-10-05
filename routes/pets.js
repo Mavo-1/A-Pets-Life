@@ -4,10 +4,16 @@ const {ensureAuth} = require('../middleware/auth')
 
 const Pet = require('../models/Pet')
 
-//@desc Show add page
-//@route GET / pets/add
-router.get('/add', ensureAuth, (req,res) => {
-    res.render('pets/add') 
+//@desc Show add log page
+//@route GET / pets/addlog
+router.get('/addlog', ensureAuth, (req,res) => {
+    res.render('pets/addlog') 
+})
+
+//@desc Show add pet page
+//@route GET / pets/addpet
+router.get('/addpet', ensureAuth, (req,res) => {
+   res.render('pets/addpet') 
 })
 
 //@desc Process add form

@@ -1,0 +1,38 @@
+<h3>Add log!</h3>
+<div class="class row">
+    <form action="/pets" method="POST" class="col s12">
+    <div class="row">
+        <div class="input-field">
+            <input type="text" id="title" name="title">
+            <label for="title">Pets</label>
+        </div>
+    </div>
+    
+
+
+    <div class="row">
+        <div class="input-field">
+            <select name="status" id="status">
+                <option value="walk" selected>Walk</option>
+                <option value="poop" >Poop</option>
+                <option value="pee" >Pee</option>
+                <option value="food" >Food</option>
+
+            </select>
+            <label for="status">Event</label>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="input-field">
+            <h5>Tell Us About Your Pet</h5>
+            <textarea name="body" id="body"></textarea>
+        </div>
+    </div>
+
+    <div class="row">
+        <input type="submit" value="Save" class="btn">
+        <a href="/dashboard" class="btn orange">Cancel</a>
+    </div>
+    </form>
+</div>

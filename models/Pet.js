@@ -10,18 +10,18 @@ const PetSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  status: {
+  event: {
     type: String,
-    default: 'public',
-    enum: ['public', 'private'],
+    default: 'walk',
+    enum: ['poop', 'pee','food','walk'],
   },
   user: {
     type: mongoose.Schema.Types.ObjectId,
     ref: 'User',
   },
-  createdAt: {
+  bornAt: {
     type: Date,
-    default: Date.now,
+    default: Date,
   },
 })
 

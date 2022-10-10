@@ -6,7 +6,6 @@
   "scripts": {
     "start": "cross-env NODE_ENV=production node app",
     "dev": "cross-env NODE_ENV=development nodemon app"
-    
   },
   "author": "Alex Garcia",
   "license": "MIT",
@@ -21,7 +20,8 @@
     "mongoose": "^6.5.3",
     "morgan": "^1.10.0",
     "passport": "^0.6.0",
-    "passport-google-oauth20": "^2.0.0"
+    "passport-google-oauth20": "^2.0.0",
+    "tailwindcss": "^3.1.8"
   },
   "devDependencies": {
     "cross-env": "^7.0.3",

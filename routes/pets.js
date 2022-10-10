@@ -16,6 +16,8 @@ router.get('/addpet', ensureAuth, (req,res) => {
    res.render('pets/addpet') 
 })
 
+
+
 //@desc Process add form
 //@route POST/ pets
 router.post('/', ensureAuth, async (req,res) => {

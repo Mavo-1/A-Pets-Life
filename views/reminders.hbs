@@ -1,6 +1,6 @@
- <h6>Log</h6>
+ <h6>Reminders</h6>
 <h3>Welcome {{name}}</h3>
-<p>Here is your pets log!</p>
+<p>Here is your pets reminders!</p>
 {{#if pets}}
     <table class="striped">
         <thead>
@@ -17,7 +17,7 @@
             <tr>
                 <td><a href="/pets/{{_id}}">{{title}}</a></td>
                 <td>{{formatDate createdAt 'MMMM Do YYYY'}}</td>
-                <td><span class="dash-status">{{event}}</span></td>
+                <td><span class="dash-status">{{status}}</span></td>
                 <td>
                     <a href="/pets/edit/{{_id}}" class="btn btn-float">
                         <i class="fas fa-edit"></i>
@@ -35,5 +35,5 @@
         </tbody>
     </table>
 {{else}}
-    <p>You have not created any events</p>
+    <p>You have not created any pets</p>
 {{/if}}
